@@ -90,8 +90,8 @@ export const useRouteStore = defineStore('route-store', {
     },
     /** 初始化动态路由 */
     async initDynamicRoute() {
-      const { userId } = getUserInfo();
-      const { data } = await fetchUserRoutes(userId);
+      const { username } = getUserInfo();
+      const { data } = await fetchUserRoutes(username);
       if (data) {
         this.routeHomeName = data.home;
         this.handleUpdateRootRedirect(data.home);
@@ -107,9 +107,9 @@ export const useRouteStore = defineStore('route-store', {
     /** 初始化权限路由 */
     async initAuthRoute() {
       const { initHomeTab } = useTabStore();
-      const { userId } = getUserInfo();
+      const { username } = getUserInfo();
 
-      if (!userId) return;
+      if (!username) return;
 
       const isDynamicRoute = this.authRouteMode === 'dynamic';
       if (isDynamicRoute) {

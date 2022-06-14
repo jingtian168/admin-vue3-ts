@@ -34,9 +34,10 @@ export function removeRefreshToken() {
 /** 获取用户信息 */
 export function getUserInfo() {
   const emptyInfo: Auth.UserInfo = {
-    userId: '',
-    userName: '',
-    userRole: 'user'
+    fullname: '',
+    username: '',
+    email: '',
+    phone: ''
   };
   const userInfo: Auth.UserInfo = getLocal<Auth.UserInfo>(EnumStorageKey['user-info']) || emptyInfo;
   return userInfo;

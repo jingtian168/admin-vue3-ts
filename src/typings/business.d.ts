@@ -14,7 +14,7 @@ declare namespace Auth {
     /** 用户id */
     username: string;
     /** 用户名 */
-    full_name: string;
+    fullname: string;
     /** 用户角色类型 */
     email: string;
     phone: string;

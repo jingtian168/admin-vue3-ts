@@ -44,7 +44,7 @@
 	"terminal.integrated.tabs.enabled": true,
 	"unocss.root": "src",
 	"workbench.iconTheme": "material-icon-theme",
-	"workbench.colorTheme": "One Dark Pro",
+	"workbench.colorTheme": "Material Theme Palenight High Contrast",
 	"[html]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},

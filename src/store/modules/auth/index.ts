@@ -62,7 +62,7 @@ export const useAuthStore = defineStore('auth-store', {
         // 登录成功弹出欢迎提示
         window.$notification?.success({
           title: '登录成功!',
-          content: `欢迎回来，${this.userInfo.userName}!`,
+          content: `欢迎回来，${this.userInfo.username}!`,
           duration: 3000
         });
 
@@ -80,8 +80,10 @@ export const useAuthStore = defineStore('auth-store', {
       let successFlag = false;
 
       // 先把token存储到缓存中(后面接口的请求头需要token)
-      const { token, refreshToken } = backendToken;
-      setToken(token);
+      const { accessToken, refreshToken } = backendToken;
+      // eslint-disable-next-line no-console
+      console.log('accessToken:', accessToken);
+      setToken(accessToken);
       setRefreshToken(refreshToken);
 
       // 获取用户信息
@@ -92,7 +94,7 @@ export const useAuthStore = defineStore('auth-store', {
 
         // 更新状态
         this.userInfo = data;
-        this.token = token;
+        this.token = accessToken;
 
         successFlag = true;
       }

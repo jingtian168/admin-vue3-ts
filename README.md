@@ -1,13 +1,13 @@
 <div align="center">
 	<img src="https://i.loli.net/2021/11/24/x5lLfuSnEawBAgi.png"/>
-	<h1>Soybean Admin</h1>
+	<h1>admin-vue3-ts</h1>
 </div>
 
 [![license](https://img.shields.io/badge/license-MIT-green.svg)](./LICENSE)
 
 ## 简介
 
-Soybean Admin 是一个基于 Vue3、Vite、TypeScript、Naive UI 的免费中后台模版，它使用了最新的前端技术栈，内置丰富的主题配置，有着极高的代码规范，基于mock实现的动态权限路由，开箱即用的中后台前端解决方案，也可用于学习参考。
+admin-vue3-ts 是一个基于 Vue3、Vite、TypeScript、Naive UI 的免费中后台模版，它使用了最新的前端技术栈，内置丰富的主题配置，有着极高的代码规范，基于mock实现的动态权限路由，开箱即用的中后台前端解决方案，也可用于学习参考。
 
 ## 特性
 
